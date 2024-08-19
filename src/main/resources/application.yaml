@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: MongoDBExperiment
+  data:
+    mongodb:
+      uri: "mongodb://localhost:27017/reactive?maxPoolSize=1000&compressors=zlib"
+
+
+  threads:
+    virtual:
+      enabled: true
+server:
+  port: 8089
+
+
+#logging:
+#  level:
+#    org.springframework.data.*: DEBUG # org.springframework.data.repository.reactive.ReactiveCrudRepository
